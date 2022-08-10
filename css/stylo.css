@@ -1,0 +1,275 @@
+body{
+    box-sizing: border-box;
+    background-color: #F3F5FC;
+    
+}
+main{
+    display: flex;
+    flex-direction: row;
+   
+}
+header{
+    display: flex;
+    width: 70%;
+    height: auto;
+    margin-top: 4em;
+    margin-left: 4em;
+    margin-right: 0;
+ }
+header img{
+     width: 100%;
+ }
+
+.encriptar{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-right: 1em;
+         
+}
+
+.textarea{
+   margin-top: 7%;
+   width: 80%;
+   height: 50%;
+   border: none;
+
+   font-size: 1.5em;
+   font-weight: bold;
+   padding: 1em;
+   background-color: transparent;
+   place-content: red;
+   margin: auto;
+   resize: none;
+   outline: none;
+}
+
+
+.textarea::placeholder{
+     color: rgb(151, 133, 133);
+     
+    
+}
+
+
+.alerta{
+    display: flex;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+    margin-bottom: 0;
+    justify-content: center;
+}
+.alerta p{
+    width: 100%;
+    color: #ff222f;
+    text-align: center;
+    font-size: 1.2em;
+}
+.alerta p::before{
+    content: url(../img/Vector.png);
+    padding-right: 1em;
+}
+
+.btn-conteiner{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-top: 2%; 
+    justify-content: center;
+
+}    
+
+
+.btnEncrip, .btnDEsencrip{
+    display:inline;
+    width:22em;
+    height: 3.5em;        
+    background-color: #0A3871;
+    border:none;
+    border-radius: 1.2em;
+    margin-right: 3em;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 1em;
+    box-shadow: 1px 2px 2px rgb(94, 91, 91);
+    transition: all 0.5s;
+}
+
+.btnEncrip:hover{
+    color : #a62b2b;
+    scale: 1.1;
+
+}
+
+.btnDEsencrip{
+    background-color: #D8DFE8;
+    margin-right: 0;
+    border: 2px solid #0A3871;
+    color: #0A3871;
+}
+
+.btnDEsencrip:hover{
+    color : #a62b2b;
+    scale: 1.1;
+
+}
+
+.tablero{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    min-height: auto;
+    background-color: #ffffff;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+    margin-top: -5em;
+    margin-right: 1em;
+    border-radius: 1em;
+    text-align: center;
+    height: 90vh;
+    box-shadow: 0px 0px 10px 0px #333 inset;;
+}
+
+.conteinerImg img{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text1{
+    padding: 1em;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.text2 {
+    padding: 1em;
+    font-size: 1.3em;
+}
+
+#titulo-resultado{
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 1.8em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 1px solid #fff;
+}
+   
+#resultado{
+    display: flex;
+    width: 90%;
+    font-size: 1.5em;
+    padding: 0.5em;
+    border: none;
+    height: 90%;
+    background-color: transparent;
+    place-content: red;
+    margin: auto;
+    resize: none;
+    outline: none;
+    margin-top: 2em;
+}
+
+.btnCopy{
+    display:inline;
+    width:100%;
+    height: 3.5em;        
+    background-color: #0A3871;
+    border:none;
+    border-radius: 1.2em;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10em;
+    box-shadow: 1px 2px 2px rgb(94, 91, 91);
+    transition: all 0.5s;
+
+}
+
+.btnCopy:hover{
+    color : #a62b2b;
+    scale: 1.1;
+
+}
+
+footer{
+    width: auto;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    border-top: 1px solid rgb(178, 182, 178);
+    color: white;
+    text-align: center;
+    height: fit-content;
+    background: #0A3871;
+}
+
+/* aqui inician propiedades responsivas */
+
+@media only screen and (max-width: 700px){
+    main{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    header img{
+        width: 10%;
+    }
+    .btn-conteiner{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 2em;
+        width: 95%;
+       
+    }
+    .btnEncrip, .btnDesencrip{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+    .textarea{
+        font-size: 100%;
+        margin: 0;
+        margin-top: 10%;
+        width: 100%;
+    }
+    .tablero{
+        margin: auto;
+        width: 90%;
+        
+        height:auto;
+    
+    }
+    .tablero img{
+        display: none;
+        margin: none;
+    }
+    .btnCopy{
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .btnPegar{
+        width: 95%;
+        height: 4em;
+    }
+    #resultado{
+        height: auto;
+        margin: 0;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+}

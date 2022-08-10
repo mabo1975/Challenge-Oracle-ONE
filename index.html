@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Desafio - Encriptador/ Desencriptador Alura</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stylo.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="https://www.aluracursos.com" target="_blank"><img src="img/logo.png" alt="Logo Alura"> </a>
+    </header>
+    
+   <main>
+        <section class="encriptar">
+            <textarea id="introducir-texto" class="textarea" type="mensaje" cols="50" rows="10" placeholder="Ingrese el texto aquí..."></textarea>
+                 <div class="alerta">
+                    <p class= "titulo">Advertencia :  <span class="typed"></span></p>
+                 </div>
+                <div class="btn-conteiner">
+                  <button id="btn-encriptar" class="btnEncrip">Encriptar!</button>
+                     <button id="btn-desencriptar"class="btnDEsencrip">Desencriptar!</button>
+                 </dSv>
+        </section>
+        <section class="tablero">
+            <div id="conteiner-resultado">
+                <h2 id="titulo-resultado"></h2>
+            </div>
+            <div id="toy" class="conteinerImg">
+                <img src="img/Muñeco.svg" alt="Muñeco">
+                <p  class="text1"><strong>Ningún texto mensaje fue encontrado</strong></p>
+                <p class="text2">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <textarea id="resultado" readonly></textarea>
+            <button id="btn-copy" class="btnCopy">Copiar</button>
+           
+        </section>
+</main> 
+
+<footer>
+    <p class="copyright">&copy; Desarrollado... <span class="typed2"></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="js/main.js"></script>
+<script src="js/encriptador.js"></script>
+<script src="js/desencriptador.js"></script>
+<script src="js/copiar.js"></script>
+</body>
+</html>
+
